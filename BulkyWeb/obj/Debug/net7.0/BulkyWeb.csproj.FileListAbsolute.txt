@@ -73,3 +73,9 @@ D:\01 - Programming\C#\UdemyBulky\Bulky\BulkyWeb\obj\Debug\net7.0\refint\BulkyWe
 D:\01 - Programming\C#\UdemyBulky\Bulky\BulkyWeb\obj\Debug\net7.0\BulkyWeb.pdb
 D:\01 - Programming\C#\UdemyBulky\Bulky\BulkyWeb\obj\Debug\net7.0\BulkyWeb.genruntimeconfig.cache
 D:\01 - Programming\C#\UdemyBulky\Bulky\BulkyWeb\obj\Debug\net7.0\ref\BulkyWeb.dll
+D:\01 - Programming\C#\UdemyBulky\Bulky\BulkyWeb\bin\Debug\net7.0\Bulky.DataAccess.dll
+D:\01 - Programming\C#\UdemyBulky\Bulky\BulkyWeb\bin\Debug\net7.0\Bulky.Models.dll
+D:\01 - Programming\C#\UdemyBulky\Bulky\BulkyWeb\bin\Debug\net7.0\Bulky.Utility.dll
+D:\01 - Programming\C#\UdemyBulky\Bulky\BulkyWeb\bin\Debug\net7.0\Bulky.DataAccess.pdb
+D:\01 - Programming\C#\UdemyBulky\Bulky\BulkyWeb\bin\Debug\net7.0\Bulky.Models.pdb
+D:\01 - Programming\C#\UdemyBulky\Bulky\BulkyWeb\bin\Debug\net7.0\Bulky.Utility.pdb

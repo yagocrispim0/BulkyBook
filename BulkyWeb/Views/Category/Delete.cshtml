@@ -1,38 +1,40 @@
 ﻿@model Category
 
 
+
 <div class="card shadow border-0 mt-4">
     <div class="card-header bg-secondary bg-gradient ml-0 py-3">
         <div class="row">
             <div class="col-12 text-center">
-                <h2 class="text-white py-2"> Create Category</h2>
+                <h2 class="text-white py-2"> Delete Category</h2>
             </div>
         </div>
     </div>
     <div class="card-body p-4">
-
         <form method="post">
-            <div class="border p-3">
+            <div class="border p-3 mt-4">
+                <div class="row pb-2">
+                    <h2 class="text-primary"> Delete Category</h2>
+                    <hr />
+                </div>
                 @{
                     /*Adds a validation summary with all the errors. Used for educational purposes*/
                 }
                 @*<div asp-validation-summary="ModelOnly"></div>*@
                 <div class="form-floating py-2 col-12">
-                    <input asp-for="Name" class="form-control border-0 shadow" />
+                    <input asp-for="Name" class="form-control border-0 shadow" disabled />
                     <label asp-for="Name" class="ms-2"></label>
-                    <span asp-validation-for="Name" class="text-danger"></span>
                 </div>
                 <div class="form-floating py-2 col-12">
-                    <input asp-for="DisplayOrder" class="form-control border-0 shadow"/>
-                    <label asp-for="DisplayOrder" class="ms-2"></label>
-                    <span asp-validation-for="DisplayOrder" class="text-danger"></span>
+                    <input asp-for="Name" class="form-control border-0 shadow" disabled />
+                    <label asp-for="Name" class="ms-2"></label>
                 </div>
                 <div class="row mt-3">
                     <div class="col-6 col-md-3">
-                        <button type="submit" class="btn btn-primary form-control">Create</button>
+                        <button type="submit" class="btn btn-danger form-control">Delete</button>
                     </div>
                     <div class="col-6 col-md-3">
-                        <a asp-controller="Category" asp-action="Index" class="btn btn-outline-primary border  form-control">
+                        <a asp-controller="Category" asp-action="Index" class="btn btn-secondary border  form-control">
                             Back to List
                         </a>
                     </div>
@@ -47,10 +49,16 @@
 
 
 
+
+
+
+
+
+
 @*Add client side validation*@
 @section Scripts{
     @{
-        <partial name="_ValidationScriptsPartial"/>
+        <partial name="_ValidationScriptsPartial" />
     }
 }
 
