@@ -3,8 +3,9 @@ using BulkyBook.DataAccess.Repository.IRepository;
 using BulkyBook.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BulkyBookWeb.Controllers
+namespace BulkyBookWeb.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -29,7 +30,7 @@ namespace BulkyBookWeb.Controllers
         {
             if (obj.Name == obj.DisplayOrder.ToString())
             {
-                ModelState.AddModelError("name", "The Display Order cannot exactly match tne name.");
+                ModelState.AddModelError("name", "The Display Order cannot exactly match the name.");
             }
             // Adding a server side validation with an empty key. It doesn't bind with the name. 
 
@@ -50,7 +51,7 @@ namespace BulkyBookWeb.Controllers
 
         public IActionResult Edit(int? id)
         {
-            if(id == null || id == 0)
+            if (id == null || id == 0)
             {
                 return NotFound();
             }
@@ -109,7 +110,7 @@ namespace BulkyBookWeb.Controllers
 
         [HttpPost, ActionName("Delete")]
         public IActionResult DeletePOST(int? id)
-        {        
+        {
             Category obj = _unitOfWork.Category.Get(u => u.Id == id);
             _unitOfWork.Category.Remove(obj);
             _unitOfWork.Save();
